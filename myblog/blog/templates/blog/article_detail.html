@@ -1,0 +1,113 @@
+{% load static %}
+{% load humanize %}
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+  {% include "blog/top.html" %}
+
+  <body class="full-wrapper">
+    {% include "blog/header.html" %}
+    <!-- header end -->
+    <main>
+      <!--? Blog Area Start -->
+      <section class="blog_area single-post-area section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 posts-list">
+              <div class="single-post">
+                <div class="feature-img">
+                  <img class="img-fluid" src="{{ article.processed_photo.url }}" alt="">
+                </div>
+                <div class="blog_details">
+                  <h2 style="color: #2d2d2d">
+                    {{ article.title }}
+                  </h2>
+                  <ul class="blog-info-link mt-3 mb-4">
+                    <li>
+                      <a href="#"
+                        ><i class="fa fa-user"></i> {{ article.views }} views</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-comments"></i>{{ comments.count }} comments</a>
+                    </li>
+                  </ul>
+                  <p> {{ article.body | safe }} </p>
+                </div>
+              </div>
+              <div class="comments-area">
+                <h4>{{ comments.count }} comments</h4>
+                {% for c in comments %}
+                  <div class="comment-list">
+                      <div class="single-comment justify-content-between d-flex">
+                        <div class="user justify-content-between d-flex">
+                          <div class="thumb">
+                            <img src="{% static "blog/img/blog/comment.png" %}" alt="">
+                          </div>
+                          <div class="desc">
+                            <p class="comment">
+                              {{ c.comment }}
+                            </p>
+                            <div class="d-flex justify-content-between">
+                              <div class="d-flex align-items-center">
+                                <h5>
+                                  <a href="#">游客</a>
+                                </h5>
+                                <p class="date">{{ c.pub_date|naturaltime }}</p>
+                              </div>
+                              <div class="reply-btn">
+                                <a href="#" class="btn-reply text-uppercase"
+                                  >reply</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>            
+                  </div>
+                {% empty %}
+                  <li>No Comment yet.</li>
+                {% endfor %}
+              </div>
+              <div class="comment-form">
+                <h4>Leave a Reply</h4>
+                <form
+                  class="form-contact comment_form"
+                  id="commentForm"
+                  action="{% url 'blog:post_comment' article.id %}"
+                  method='post'
+                >
+                {% csrf_token %}
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="form-group">
+                        <textarea
+                          class="form-control w-100"
+                          name="comment"
+                          id="comment"
+                          cols="30"
+                          rows="9"
+                          placeholder="Write Comment"
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <button
+                      type="submit"
+                      class="button button-contactForm btn_1 boxed-btn"
+                    >
+                      Post Comment
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          {% include "blog/right_sidebar.html" %}
+          </div>
+        </div>
+      </section>
+      <!-- Blog Area End -->
+    </main>
+    {% include "blog/foot.html" %}
+  </body>
+</html>

@@ -1,0 +1,168 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="zxx">
+{% include "blog/top.html" %}
+
+<body class="full-wrapper">
+    <!-- ? Preloader Start -->
+    {% include "blog/header.html" %}
+    <main>
+        <!--? Hero Area Start-->
+        <div class="container-fluid">
+            <div class="slider-area">
+                <!-- Mobile Device Show Menu-->
+                <div class="header-right2 d-flex align-items-center">
+                    <!-- Social -->
+                    <div class="header-social  d-block d-md-none">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://bit.ly/sai4ull"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                    <!-- Search Box -->
+                    <div class="search d-block d-md-none">
+                        <ul class="d-flex align-items-center">
+                            <li class="mr-15">
+                                <div class="nav-search search-switch">
+                                    <i class="ti-search"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card-stor">
+                                    <img src="{% static "blog/img/gallery/card.svg" alt="" %}">
+                                    <span>0</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /End mobile  Menu-->
+
+                <div class="slider-active dot-style">
+                    <!-- Single -->
+                    <div class="single-slider slider-bg1 hero-overly slider-height d-flex align-items-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-xl-8 col-lg-9">
+                                    <!-- Hero Caption -->
+                                    <div class="hero__caption">
+                                        <h1>YES<br>IT'S<br>ME</h1>
+                                        <a href="{% url 'blog:contact' %}" class="btn">Know Me</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single -->
+                    <div class="single-slider slider-bg2 hero-overly slider-height d-flex align-items-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-xl-8 col-lg-9">
+                                    <!-- Hero Caption -->
+                                    <div class="hero__caption">
+                                        <h1>YES<br>IT'S<br>ME</h1>
+                                        <a href="{% url 'blog:contact' %}" class="btn">Know Me</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single -->
+                    <div class="single-slider slider-bg3 hero-overly slider-height d-flex align-items-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-xl-8 col-lg-9">
+                                    <!-- Hero Caption -->
+                                    <div class="hero__caption">
+                                        <h1>YES<br>IT'S<br>ME</h1>
+                                        <a href="{% url 'blog:contact' %}" class="btn">Know Me</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Hero -->
+        <!--? Popular Items Start -->
+        <div class="popular-items pt-50">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-popular-items mb-50 text-center wow fadeInUp" data-wow-duration="1s"
+                            data-wow-delay=".1s">
+                            <div class="popular-img">
+                                <img src="{% static "blog/img/gallery/popular1.png" %}">
+                                <div class="img-cap">
+                                    <span>我的新眼镜</span>
+                                </div>
+                                <div class="favorit-items">
+                                    {# <a href="shop.html" class="btn">Know Me</a> #}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-popular-items mb-50 text-center wow fadeInUp" data-wow-duration="1s"
+                            data-wow-delay=".2s">
+                            <div class="popular-img">
+                                <img src="{% static "blog/img/gallery/popular2.png" %}">
+                                <div class="img-cap">
+                                    <span>和男朋友吃食堂</span>
+                                </div>
+                                <div class="favorit-items">
+                                    {# <a href="shop.html" class="btn">Know Me</a> #}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-popular-items mb-50 text-center wow fadeInUp" data-wow-duration="1s"
+                            data-wow-delay=".4s">
+                            <div class="popular-img">
+                                <img src="{% static "blog/img/gallery/popular3.png" %}">
+                                <div class="img-cap">
+                                    <span>等着吃宵夜</span>
+                                </div>
+                                <div class="favorit-items">
+                                    {# <a href="shop.html" class="btn">Know Me</a> #}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-popular-items mb-50 text-center wow fadeInUp" data-wow-duration="1s"
+                            data-wow-delay=".6s">
+                            <div class="popular-img">
+                                <img src="{% static "blog/img/gallery/popular4.png" %}">
+                                <div class="img-cap">
+                                    <span>试试新衣服</span>
+                                </div>
+                                <div class="favorit-items">
+                                    {# <a href="shop.html" class="btn">Know Me</a> #}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--? New Arrival End -->
+            <!--? collection -->
+            <section class="collection section-bg2 section-padding30 section-over1 ml-15 mr-15"
+                data-background="{% static "blog/img/gallery/section_bg01.png" %}">
+                <div class="container-fluid"></div>
+                <div class="row justify-content-center">
+                    <div class="col-xl-7 col-lg-9">
+                        <div class="single-question text-center">
+                            <h2 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".1s">我和他的故事</h2>
+                            <a href="#" class="btn" class="wow fadeInUp" data-wow-duration="2s"
+                                data-wow-delay=".4s">About Us</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </main>
+    {% include "blog/foot.html" %}
+</body>
+
+</html>

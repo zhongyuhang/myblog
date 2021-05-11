@@ -1,0 +1,98 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="zxx">
+{% include "blog/top.html" %}
+
+<body class="full-wrapper">
+    <!-- ? Preloader Start -->
+    {% include "blog/header.html" %}
+    <main>
+        <!-- About Area Start -->
+        <div class="about-area">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="section-tittle mb-60 text-center pt-10">
+                            <h2>My Story</h2>
+                            <p class="pera">
+                                姓名：张琴辉</br>
+                                性别：女</br>
+                                学历：本科</br>
+                                芳龄：24</br>
+                                性格：活泼开朗、温婉大方</br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="about-img pb-bottom">
+                            <img src="{% static "blog/img/gallery/about1.png" %}" class="w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About Area End -->
+        <!--? Popular Items Start -->
+        {% comment %} <div class="popular-items">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-popular-items mb-50 text-center">
+                            <div class="popular-img">
+                                <img src="{% static "blog/img/gallery/popular1.png" %}" alt="">
+                                <div class="img-cap">
+                                    <span>Glasses</span>
+                                </div>
+                                <div class="favorit-items">
+                                    <a href="#" class="btn">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-popular-items mb-50 text-center">
+                            <div class="popular-img">
+                                <img src="{% static "blog/img/gallery/popular2.png" %}" alt="">
+                                <div class="img-cap">
+                                    <span>Watches</span>
+                                </div>
+                                <div class="favorit-items">
+                                    <a href="#" class="btn">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-popular-items mb-50 text-center">
+                            <div class="popular-img">
+                                <img src="{% static "blog/img/gallery/popular3.png" %}" alt="">
+                                <div class="img-cap">
+                                    <span>Jackets</span>
+                                </div>
+                                <div class="favorit-items">
+                                    <a href="#" class="btn">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-popular-items mb-50 text-center">
+                            <div class="popular-img">
+                                <img src="{% static "blog/img/gallery/popular4.png" %}" alt="">
+                                <div class="img-cap">
+                                    <span>Clothes</span>
+                                </div>
+                                <div class="favorit-items">
+                                    <a href="#" class="btn">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> {% endcomment %}
+    </main>
+    {% include "blog/foot.html" %}
+</body>
+
+</html>

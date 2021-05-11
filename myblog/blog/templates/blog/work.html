@@ -1,0 +1,349 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Fashion | Teamplate</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static " blog/img/favicon.ico" %}">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{% static " blog/css/bootstrap.min.css" %}">
+    <link rel="stylesheet" href="{% static " blog/css/owl.carousel.min.css" %}">
+    <link rel="stylesheet" href="{% static " blog/css/slicknav.css" %}">
+    <link rel="stylesheet" href="{% static " blog/css/flaticon.css" %}">
+    <link rel="stylesheet" href="{% static " blog/css/progressbar_barfiller.css" %}">
+    <link rel="stylesheet" href="{% static " blog/css/gijgo.css" %}">
+    <link rel="stylesheet" href="{% static " blog/css/animate.min.css" %}">
+    <link rel="stylesheet" href="{% static " blog/blog/css/animated-headline.css" %}">
+    <link rel="stylesheet" href="{% static " blog/css/magnific-popup.css" %}">
+    <link rel="stylesheet" href="{% static " blog/css/fontawesome-all.min.css" %}">
+    <link rel="stylesheet" href="{% static " blog/css/themify-icons.css" %}">
+    <link rel="stylesheet" href="{% static " blog/css/slick.css" %}">
+    <link rel="stylesheet" href="{% static " blog/css/nice-select.css" %}">
+    <link rel="stylesheet" href="{% static " blog/css/style.css" %}">
+
+</head>
+
+<body class="full-wrapper">
+    <!-- ? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="assets/img/logo/loder.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start-->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area ">
+            <div class="main-header header-sticky">
+                <div class="container-fluid">
+                    <div class="menu-wrapper d-flex align-items-center justify-content-between">
+                        <div class="header-left d-flex align-items-center">
+                            <!-- Logo -->
+                            <div class="logo">
+            <a href="{% url 'blog:index' %}"><img src="{% static "blog/img/logo/logo.png"
+                                        %}" alt=""></a>
+                            </div>
+                            <!-- Main-menu -->
+                            <div class="main-menu  d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a href="{% url 'blog:person' %}">Me</a></li>
+                                        <li><a href="{% url 'blog:work' %}">Work</a></li>
+                                        <li><a href="{% url 'blog:contact' %}">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+    <!-- header end -->
+    <main>
+        <!-- listing Area Start -->
+        <div class="category-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-7 col-lg-8 col-md-10">
+                        <div class="section-tittle mb-50">
+                            <h2>WORK HARD</h2>
+                            <p>In a kindergarten</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--?  Right content -->
+                    <div class="col-xl-9 col-lg-9 col-md-8" margin="0 auto">
+                        <!--? New Arrival Start -->
+                        <div class="new-arrival new-arrival2">
+                            <div class="row">
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                    <div class="single-new-arrival mb-50 text-center">
+                                        <div class="popular-img">
+                                            <img src="{% static "blog/img/gallery/arrival2.png" %}" alt="">
+                                        </div>
+                                        <div class="popular-caption">
+                                            <h3>Knitted Jumper</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                    <div class="single-new-arrival mb-50 text-center">
+                                        <div class="popular-img">
+                                            <img src="{% static "blog/img/gallery/arrival3.png" %}"alt="">
+                                        </div>
+                                        <div class="popular-caption">
+                                            <h3>Knitted Jumper</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                    <div class="single-new-arrival mb-50 text-center">
+                                        <div class="popular-img">
+                                            <img src="{% static "blog/img/gallery/arrival4.png" %}" alt="">
+                                            <div class="favorit-items">
+                                                <!-- <span class="flaticon-heart"></span> -->
+                                                <img src="{% static "blog/img/gallery/favorit-card.png" %}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="popular-caption">
+                                            <h3>Knitted Jumper</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl43 col-lg-4 col-md-6 col-sm-6">
+                                    <div class="single-new-arrival mb-50 text-center">
+                                        <div class="popular-img">
+                                            <img src="{% static "blog/img/gallery/arrival5.png" %}" alt="">
+                                            <div class="favorit-items">
+                                                <!-- <span class="flaticon-heart"></span> -->
+                                                <img src="{% static "blog/img/gallery/favorit-card.png" %}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="popular-caption">
+                                            <h3>Knitted Jumper</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                    <div class="single-new-arrival mb-50 text-center">
+                                        <div class="popular-img">
+                                            <img src="{% static "blog/img/gallery/arrival6.png" %}" alt="">
+                                            <div class="favorit-items">
+                                                <!-- <span class="flaticon-heart"></span> -->
+                                                <img src="{% static "blog/img/gallery/favorit-card.png" %}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="popular-caption">
+                                            <h3>Knitted Jumper</h3>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                    <div class="single-new-arrival mb-50 text-center">
+                                        <div class="popular-img">
+                                            <img src="{% static "blog/img/gallery/arrival7.png" %}" alt="">
+                                        </div>
+                                        <div class="popular-caption">
+                                            <h3><a href="product_details.html">Knitted Jumper</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                    <div class="single-new-arrival mb-50 text-center">
+                                        <div class="popular-img">
+                                            <img src="{% static "blog/img/gallery/arrival8.png" %}" alt="">
+                                        </div>
+                                        <div class="popular-caption">
+                                            <h3>Knitted Jumper</h3>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                    <div class="single-new-arrival mb-50 text-center">
+                                        <div class="popular-img">
+                                            <img src="{% static "blog/img/gallery/arrival1.png" %}"alt="">
+                                        </div>
+                                        <div class="popular-caption">
+                                            <h3>Knitted Jumper</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Button -->
+                            <div class="row justify-content-center">
+                                <div class="room-btn mt-20">
+                                    <a href="catagori.html" class="border-btn">Browse More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--? New Arrival End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- listing-area Area End -->
+        <!--? Popular Items Start -->
+        <div class="popular-items">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-popular-items mb-50 text-center">
+                            <div class="popular-img">
+                                <img src="assets/img/gallery/popular1.png" alt="">
+                                <div class="img-cap">
+                                    <span>Glasses</span>
+                                </div>
+                                <div class="favorit-items">
+                                    <a href="shop.html" class="btn">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-popular-items mb-50 text-center">
+                            <div class="popular-img">
+                                <img src="assets/img/gallery/popular2.png" alt="">
+                                <div class="img-cap">
+                                    <span>Watches</span>
+                                </div>
+                                <div class="favorit-items">
+                                    <a href="shop.html" class="btn">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-popular-items mb-50 text-center">
+                            <div class="popular-img">
+                                <img src="assets/img/gallery/popular3.png" alt="">
+                                <div class="img-cap">
+                                    <span>Jackets</span>
+                                </div>
+                                <div class="favorit-items">
+                                    <a href="shop.html" class="btn">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-popular-items mb-50 text-center">
+                            <div class="popular-img">
+                                <img src="assets/img/gallery/popular4.png" alt="">
+                                <div class="img-cap">
+                                    <span>Clothes</span>
+                                </div>
+                                <div class="favorit-items">
+                                    <a href="shop.html" class="btn">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Popular Items End -->
+        <!--? Services Area End -->
+    </main>
+
+    <footer>
+        <div class="footer-bottom-area">
+            <div class="container">
+                <div class="footer-border">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-xl-12 ">
+                            <div class="footer-copy-right text-center">
+                                <p>
+                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                    Copyright &copy;
+                                    <script>document.write(new Date().getFullYear());</script> This site is made with <i
+                                        class="fa fa-heart" aria-hidden="true"></i> by <a
+                                        href="https://github.com/zhongyuhang" target="_blank">Yh</a>
+                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End-->
+    </footer>
+    <!--? Search model Begin -->
+    <div class="search-model-box">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-btn">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Searching key.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search model end -->
+    <!-- Scroll Up -->
+    <div id="back-top">
+        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    </div>
+
+    <!-- JS here -->
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="{% static "blog/js/vendor/modernizr-3.5.0.min.js" %}"></script>
+    <script src="{% static "blog/js/vendor/jquery-1.12.4.min.js" %}"></script>
+    <script src="{% static "blog/js/popper.min.js" %}"></script>
+    <script src="{% static "blog/js/bootstrap.min.js" %}"></script>
+
+    <!-- Slick-slider , Owl-Carousel ,slick-nav -->
+    <script src="{% static "blog/js/owl.carousel.min.js" %}"></script>
+    <script src="{% static "blog/js/slick.min.js" %}"></script>
+    <script src="{% static "blog/js/jquery.slicknav.min.js" %}"></script>
+
+    <!-- One Page, Animated-HeadLin, Date Picker -->
+    <script src="{% static "blog/js/wow.min.js" %}"></script>
+    <script src="{% static "blog/js/animated.headline.js" %}"></script>
+    <script src="{% static "blog/js/jquery.magnific-popup.js" %}"></script>
+    <script src="{% static "blog/js/gijgo.min.js" %}"></script>
+
+    <!-- Nice-select, sticky,Progress -->
+    <script src="{% static "blog/js/jquery.nice-select.min.js" %}"></script>
+    <script src="{% static "blog/js/jquery.sticky.js" %}"></script>
+    <script src="{% static "blog/js/jquery.barfiller.js" %}"></script>
+
+    <!-- counter , waypoint,Hover Direction -->
+    <script src="{% static "blog/js/jquery.counterup.min.js" %}"></script>
+    <script src="{% static "blog/js/waypoints.min.js" %}"></script>
+    <script src="{% static "blog/js/jquery.countdown.min.js" %}"></script>
+    <script src="{% static "blog/js/hover-direction-snake.min.js" %}"></script>
+
+    <!-- contact js -->
+    <script src="{% static "blog/js/contact.js" %}"></script>
+    <script src="{% static "blog/js/jquery.form.js" %}"></script>
+    <script src="{% static "blog/js/jquery.validate.min.js" %}"></script>
+    <script src="{% static "blog/js/mail-script.js" %}"></script>
+    <script src="{% static "blog/js/jquery.ajaxchimp.min.js" %}"></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="{% static "blog/js/plugins.js" %}"></script>
+    <script src="{% static "blog/js/main.js" %}"></script>
+
+
+</body>
+
+</html>
